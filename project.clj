@@ -8,5 +8,4 @@
                  [environ "1.0.2"]
                  [clj-jwt "0.1.1"]
                  [clj-time "0.11.0"]
-                 [cheshire "5.5.0"]]
-  :plugins [[lein-environ "1.0.2"]])
+                 [cheshire "5.5.0"]])
