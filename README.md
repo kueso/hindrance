@@ -2,12 +2,6 @@
 
 A convenience library for working with a particularly inconvenient authentication mechanism (OAuth 2.0 JWT Bearer Credentials Flow).
 
-This library assumes that the following details are present as environment variables (or any other place where [environ](https://github.com/weavejester/environ) can access them):
-
-- `HINDRANCE_OAUTH_CLIENT_ID`: Your client_id, as assigned by your OAuth provider.
-- `HINDRANCE_OAUTH_SHARED_SECRET`: The shared secret key assigned by your OAuth provider.
-- `HINDRANCE_OAUTH_TOKEN_URL`: The URL to which you post your JWTs to receive an access token.
-
 ## Usage
 
 This library provides a wrapper function for [clj-http](https://github.com/dakrone/clj-http) client functions, so that you can simply make requests as you normally would and the bearer access token will be transparently added to the request headers.
