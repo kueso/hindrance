@@ -15,7 +15,7 @@ This library provides a wrapper function for [clj-http](https://github.com/dakro
 In your project.clj: 
 
 ```
-[thirtyspokes/hindrance "0.2.0"]
+[kueso/hindrance "0.2.0"]
 ```
 
 Or if your desires are *unconventional*:
