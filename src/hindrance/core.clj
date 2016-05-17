@@ -36,11 +36,11 @@
   response map unchanged."
   []
   (client/post
-   (env :hindrance-oauth-token-url)
+   (:token-url @creds)
       {:form-params 
        {:grant_type "client_credentials"
         :client_asertion_type "urn:params:oauth:client-assertion-type:jwt-bearer"
-        :client_id (env :hindrance-oauth-client-id)
+        :client_id (:client-id @creds)
         :client_assertion (build-jwt)}}))
 
 (defn request-access-token
