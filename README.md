@@ -15,7 +15,7 @@ This library provides a wrapper function for [clj-http](https://github.com/dakro
 In your project.clj: 
 
 ```
-[thirtyspokes/hindrance "0.1.3"]
+[thirtyspokes/hindrance "0.2.0"]
 ```
 
 Or if your desires are *unconventional*:
@@ -32,8 +32,11 @@ Then:
 
 ```clojure
 (ns your-project.core
-  (:require [hindrance.core :refer [with-oauth-token]]
+  (:require [hindrance.core :refer [defcreds with-oauth-token]]
             [clj-http.client :as client]))
+
+;; Declare your client-id, shared-secret, and your oauth provider's url
+(defcreds "your-client-id" "your-shared-secret" "your-oauth-url")
 
 ;; Assuming you received the access token "super-good-token", the with-oauth-token wrapper
 ;; will adjust your request map to include Authorization: Bearer super-good-token in the headers.
