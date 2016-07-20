@@ -16,9 +16,9 @@ Or if your desires are *unconventional*:
 
 ```
 <dependency>
-  <groupId>thirtyspokes</groupId>
+  <groupId>kueso</groupId>
   <artifactId>hindrance</artifactId>
-  <version>0.1.3</version>
+  <version>0.2.0</version>
 </dependency>
 ```
 
